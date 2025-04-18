@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>СтройЛаб</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container">
+        <input id="burger-toggle" type="checkbox">
+
+        <label for="burger-toggle" class="burger">
+            <span></span>
+        </label>
+
+
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <ul class="header__list par_1">
+                <li><a href="/" class="header__link hov">Главная</a></li>
+                <li><a href="/" class="header__link hov">О компании</a></li>
+                <li><a href="/" class="header__link hov">Услуги</a></li>
+                <li><a href="/" class="header__link hov">Проекты</a></li>
+                <li><a href="/" class="header__link hov">Новости</a></li>
+                <li><a href="/" class="header__link hov">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="basket"><img src="assets/image/basket.svg" alt=""></div>
+
+        <div class="header_right">
+            <a href="tel:+78003455667" class="hov">+7 (800) 345 56 67</a>
+            <a href="#" class="btn hov border">Заказать звонок</a>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- banner start -->
+    <div class="banner container mt">
+        <div class="banner_l">
+            <div class="slider">
+                <div class="slide">
+                    <img src="assets/img/banner_2.png" alt="">
+                </div>
+            </div>
+          
+
+
+            <script>
+                const slides = document.querySelectorAll('.slide')
+                let currentIndex = 0
+
+                slides[currentIndex].classList.add('active')
+                document.getElementById('before').addEventListener('click', () => {
+                    slides[currentIndex].classList.remove('active')
+
+                    if (currentIndex === slides.length - 1) {
+                        currentIndex = 0
+                    } else {
+                        currentIndex++
+                    }
+                    slides[currentIndex].classList.add('active')
+                })
+
+                document.getElementById('after').addEventListener('click', () => {
+                    slides[currentIndex].classList.remove('active')
+
+                    if (currentIndex === 0) {
+                        currentIndex = slides.length - 1
+                    } else {
+                        currentIndex--
+                    }
+                    slides[currentIndex].classList.add('active')
+                })
+
+            </script>
+        </div>
+
+
+        <div class="banner_r">
+            <div class="banner_r_t">
+                <h1>СтройЛаб</h1>
+                <h3>- профессиональный подход<br>
+                    <span>с гарантией качества</span>
+                </h3>
+
+            </div>
+            <div class="banner_r_b">
+                <a href="#" class="btn hov border">Оставить заявку </a>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- about start -->
+    <div class="about container mt par_1">
+        <div class="about_l">
+            <p style="width: 700px;">Компания "СтройЛаб" работает на рынке строительных услуг более 15 лет. За это время
+                мы реализовали более 200 успешных проектов различной сложности. <br> <br>
+
+                Наша миссия -создавать <span>качественное и доступное</span> жилье, отвечающее всем современным
+                стандартам.</p>
+
+            <div class="about_b">
+                <div class="prem">
+                    <h1>15</h1>
+                    <p>лет на рынке</p>
+                </div>
+                <div class="prem">
+                    <h1>280</h1>
+                    <p>реализованных проектов </p>
+                </div>
+                <div class="prem">
+                    <h1>1600</h1>
+                    <p>довольных клиентов</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="assets/img/about.png" alt="">
+    </div>
+    <!-- about end -->
+
+    <section class="reviews">
+        <div class="container">
+            <div class="title container mt">
+                <div class="line"></div>
+                <h1>ОТЗЫВЫ</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="reviews-slider">
+                <button class="slider-nav slider-prev border"><img src="assets/img/arr_1.png" alt=""></button>
+                <button class="slider-nav slider-next border"><img src="assets/img/arr_2.png" alt=""></button>
+
+                <div class="slider-container">
+                    <div class="slider-track">
+
+                        <div class="review-card">
+                            <div class="review-content">
+                                <p class="review-text">Заказывали строительство коттеджа в "СтройЛаб". Работали
+                                    оперативно, соблюдали все сроки. Особенно порадовало качество материалов и
+                                    внимательное отношение к деталям. Дом получился именно таким, как мы и хотели!</p>
+                                <div class="review-author">
+                                    <div class="author-avatar">
+                                        <img src="assets/img/rev1.jpg" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Александр Петров</h4>
+                                        <p>Коттеджный посёлок "Зелёные холмы"</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="review-card">
+                            <div class="review-content">
+                                <p class="review-text">Ремонт квартиры сделали в кратчайшие сроки, хотя мы просили
+                                    сделать к определённой дате. Дизайн-проект предложили очень интересный, учли все
+                                    наши пожелания. Качество работ на высоте - прошло уже 2 года, а всё как новое.</p>
+                                <div class="review-author">
+                                    <div class="author-avatar">
+                                        <img src="assets/img/rev2.png" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Елена Смирнова</h4>
+                                        <p>Ремонт 3-комнатной квартиры</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="review-card">
+                            <div class="review-content">
+                                <p class="review-text">Строили с "СтройЛаб" офисное здание. Компания проявила себя как
+                                    надёжный подрядчик - все работы по смете, без скрытых платежей. Сдавали объект с
+                                    опережением графика. Теперь планируем с ними же строить складской комплекс.</p>
+                                <div class="review-author">
+                                    <div class="author-avatar">
+                                        <img src="assets/img/rev3.png" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Дмитрий Иванов</h4>
+                                        <p>Офисный центр на ул. Строителей</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.slider-track');
+            const cards = document.querySelectorAll('.review-card');
+            const prevBtn = document.querySelector('.slider-prev');
+            const nextBtn = document.querySelector('.slider-next');
+            const dots = document.querySelectorAll('.dot');
+
+            let currentIndex = 0;
+            let slideInterval;
+            const slideCount = cards.length;
+
+            function updateSlider() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex === slideCount - 1) ? 0 : currentIndex + 1;
+                updateSlider();
+            }
+
+
+            function prevSlide() {
+                currentIndex = (currentIndex === 0) ? slideCount - 1 : currentIndex - 1;
+                updateSlider();
+            }
+
+
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(slideInterval);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                nextSlide();
+                startAutoSlide();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                prevSlide();
+                startAutoSlide();
+            });
+
+
+
+            updateSlider();
+            startAutoSlide();
+
+
+        });
+    </script>
+
+
+    <!-- ask start -->
+    <div class="title container mt">
+        <div class="line"></div>
+        <h1>НАШИ УСЛУГИ</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="asks">
+        <div class="ask">
+            <h2>Строительство домов под ключ</h2>
+
+            <div class="ask-content">
+                <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
+                    <br><br>
+                    ▶ Индивидуальные и типовые проекты
+                    <br>
+                    ▶Любые технологии: кирпич, газобетон, каркасные дома
+                    <br>
+                    ▶ Четкое соблюдение сроков и бюджета
+                    <br>
+                    ▶Гарантия на все виды работ
+                </p>
+            </div>
+
+            <div class="plus">
+                <div class="plus_line_height"></div>
+                <div class="plus_line_width"></div>
+            </div>
+        </div>
+
+        <div class="ask ">
+            <h2>Капитальный ремонт квартир и офисов</h2>
+
+            <div class="ask-content">
+                <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
+                    <br><br>
+                    ▶ Индивидуальные и типовые проекты
+                    <br>
+                    ▶Любые технологии: кирпич, газобетон, каркасные дома
+                    <br>
+                    ▶ Четкое соблюдение сроков и бюджета
+                    <br>
+                    ▶Гарантия на все виды работ
+                </p>
+            </div>
+
+            <div class="plus">
+                <div class="plus_line_height"></div>
+                <div class="plus_line_width"></div>
+            </div>
+        </div>
+
+        <div class="ask">
+            <h2>Коммерческое строительство</h2>
+
+            <div class="ask-content">
+                <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
+                    <br><br>
+                    ▶ Индивидуальные и типовые проекты
+                    <br>
+                    ▶Любые технологии: кирпич, газобетон, каркасные дома
+                    <br>
+                    ▶ Четкое соблюдение сроков и бюджета
+                    <br>
+                    ▶Гарантия на все виды работ
+                </p>
+            </div>
+
+            <div class="plus">
+                <div class="plus_line_height"></div>
+                <div class="plus_line_width"></div>
+            </div>
+        </div>
+
+        <div class="ask">
+            <h2>Благоустройство территории</h2>
+
+            <div class="ask-content">
+                <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
+                    <br><br>
+                    ▶ Индивидуальные и типовые проекты
+                    <br>
+                    ▶Любые технологии: кирпич, газобетон, каркасные дома
+                    <br>
+                    ▶ Четкое соблюдение сроков и бюджета
+                    <br>
+                    ▶Гарантия на все виды работ
+                </p>
+            </div>
+
+            <div class="plus">
+                <div class="plus_line_height"></div>
+                <div class="plus_line_width"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.ask').forEach(ask => {
+            ask.addEventListener('click', () => {
+                ask.classList.toggle('active');
+            });
+        });
+    </script>
+    <!-- ask end -->
+
+
+    <!-- proect start -->
+    <div class="title container mt" >
+        <div class="line"></div>
+        <h1>НАШИ ПРОЕКТЫ</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="filters container">
+        <a href="/" class="fil" autofocus>Все</a>
+        <a href="/" class="fil">Жилые комплексы</a>
+        <a href="/" class="fil">Коммерческая недвижимость </a>
+        <a href="/" class="fil">Ремонт </a>
+        <a href="/" class="fil">Благоустройство </a>
+    </div>
+
+
+    <div class="proects container">
+        <div class="proect">
+            <img src="assets/img/proect_1.png" alt="">
+            <h3> ЖК Небеса</h3>
+            <a href="/" class="btn border">Подробнее</a>
+        </div>
+        <div class="proect">
+            <img src="assets/img/proect_2.png" alt="">
+            <h3>ЖК Зеленый берег</h3>
+            <a href="/" class="btn border">Подробнее</a>
+        </div>
+        <div class="proect">
+            <img src="assets/img/proect_3.png" alt="">
+            <h3>ЖК Американская мечта</h3>
+            <a href="/" class="btn border">Подробнее</a>
+        </div>
+    </div>
+    <!-- proect end -->
+
+
+    <!-- news start -->
+    <div class="title container mt" >
+        <div class="line"></div>
+        <h1>НОВОСТИ</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="news container" style="margin-top: 70px;">
+        <div class="new">
+            <div class="title_new">СтройЛаб начинает строительство нового жилого комплекса "Речной квартал"</div>
+
+            <div class="date">03.02.2024</div>
+
+            <p>Компания "СтройЛаб" приступила к реализации масштабного проекта — жилого комплекса "Речной квартал" в
+                центре Москвы. Комплекс будет включать 5 современных корпусов с подземным паркингом, детскими площадками
+                и зонами отдыха. Сдача объекта запланирована на 4 квартал 2024 года. Для будущих жителей предусмотрены
+                специальные условия ипотечного кредитования от наших партнеров.</p>
+        </div>
+
+        <div class="new">
+            <div class="title_new">Внедрение "зеленых" технологий в строительстве</div>
+
+            <div class="date">23.11.2024</div>
+
+            <p>СтройЛаб объявляет о переходе на экологичные строительные материалы и энергоэффективные технологии. В
+                новых проектах будут использоваться солнечные панели, системы рекуперации тепла и переработанные
+                материалы. Первым "зеленым" объектом станет бизнес-центр "Экохаб", строительство которого начнется уже в
+                этом месяце.</p>
+        </div>
+
+        <div class="new">
+            <div class="title_new">Специальная акция "Ремонт под ключ со скидкой 20%"</div>
+
+            <div class="date">09.06.2024</div>
+
+            <p>Только до конца лета! "СтройЛаб" предлагает уникальное предложение — комплексный ремонт квартир и офисов
+                со скидкой 20%. В акцию входят: дизайн-проект, черновая и чистовая отделка, монтаж инженерных систем.
+                Оставьте заявку до 31 августа и получите бесплатный выезд замерщика.</p>
+        </div>
+
+        <div class="new">
+            <div class="title_new">"СтройЛаб" получил награду "Лучший застройщик года-2023"</div>
+
+            <div class="date">07.12.2024</div>
+
+            <p>По итогам национальной премии в области строительства наша компания удостоена звания "Лучший застройщик
+                года" в категории "Коммерческая недвижимость". Награда вручена за инновационный подход к проектированию
+                и высокое качество реализации бизнес-центра "Плаза Тауэр". Это уже третья профессиональная награда
+                компании за последние 2 года.</p>
+        </div>
+    </div>
+    <!-- news end -->
+
+    <!-- contacts start -->
+
+    <div class="title container mt" >
+        <div class="line"></div>
+        <h1>КОНТАКТЫ</h1>
+        <div class="line"></div>
+    </div>
+    <div class="contacts container">
+        <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/org/ak_tash/1707546221/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">СтройЛаб</a><a
+                href="https://yandex.ru/maps/43/kazan/category/construction_company/184107633/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Строительная компания в Казани</a><a
+                href="https://yandex.ru/maps/43/kazan/category/apartments_in_new_buildings/184107519/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:28px;">Квартиры в новостройках в
+                Казани</a><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=49.378082%2C55.816741&mode=search&oid=1707546221&ol=biz&sll=49.246246%2C55.816604&source=serp_navig&text=%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F&z=11"
+                width="1300" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+
+        <div class="contacts_r">
+            <a href="tel:+78003455667" class="hov">+7 (800) 345 56 67</a>
+            <a href="mailto:stroilab@mail.ru">stroilab@mail.ru</a>
+            <div class="icons">
+                <a href="/"><img src="assets/img/tg.svg" alt=""></a>
+            <a href="/"><img src="assets/img/vk.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- contacts end -->
+
+    <!-- footer start -->
+    <footer class="container mt">
+
+        <div class="col par_1">
+            <div class="images_footer">
+                <img src="assets/img/tg.svg" alt="">
+                <img src="assets/img/vk.svg" alt="">
+            </div>
+            <a href="mailto:stroilab@mail.ru">stroilab@mail.ru</a>
+        </div>
+
+
+        <div class="col par_1">
+            <a href="tel:+78003455667" class="hov">+7 (800) 345 56 67</a>
+            <a href="mailto:stroilab@mail.ru">stroilab@mail.ru</a>
+        </div>
+
+
+        <div class="col par_1">
+            <a href="#">Услуги</a>
+            <a href="assets/docs/Политика конфиденциальности.docx" download>Политика конфиденциальности</a>
+
+        </div>
+
+        <div class="col par_1">
+            <a href="assets/docs/Условия оплаты.docx" download>Условия оплаты</a>
+            <a href="assets/docs/Условия доставки.docx" download>Новости</a>
+        </div>
+
+        <div class="col par_1">
+            <a href="#">Для сотрудничества</a>
+            <a href="#">Проекты</a>
+        </div>
+
+    </footer>
+
+    <p style="color: darkgrey; margin-top: 3em; display: flex;align-items: center;
+ justify-content: center;" class="container">©Базгутдинова Наргиза 2025</p>
+    <!-- footer end -->
+
+
+
+
+</body>
+
+</html>
