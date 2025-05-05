@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-    <title>СтройЛаб</title>
+    <title>КвартирМастер</title>
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -46,48 +47,13 @@
     <!-- banner start -->
     <div class="banner container mt">
         <div class="banner_l">
-            <div class="slider">
-                <div class="slide">
-                    <img src="assets/img/banner_2.png" alt="">
-                </div>
-            </div>
-          
-
-
-            <script>
-                const slides = document.querySelectorAll('.slide')
-                let currentIndex = 0
-
-                slides[currentIndex].classList.add('active')
-                document.getElementById('before').addEventListener('click', () => {
-                    slides[currentIndex].classList.remove('active')
-
-                    if (currentIndex === slides.length - 1) {
-                        currentIndex = 0
-                    } else {
-                        currentIndex++
-                    }
-                    slides[currentIndex].classList.add('active')
-                })
-
-                document.getElementById('after').addEventListener('click', () => {
-                    slides[currentIndex].classList.remove('active')
-
-                    if (currentIndex === 0) {
-                        currentIndex = slides.length - 1
-                    } else {
-                        currentIndex--
-                    }
-                    slides[currentIndex].classList.add('active')
-                })
-
-            </script>
+            <img src="assets/img/banner_2.png" alt="">
         </div>
 
 
         <div class="banner_r">
             <div class="banner_r_t">
-                <h1>СтройЛаб</h1>
+                <h1>КвартирМастер</h1>
                 <h3>- профессиональный подход<br>
                     <span>с гарантией качества</span>
                 </h3>
@@ -101,9 +67,16 @@
     <!-- banner end -->
 
     <!-- about start -->
+    <div class="title_block container mt">
+        <h1>О НАС</h1>
+        <h1>01</h1>
+    </div>
     <div class="about container mt par_1">
+
+
         <div class="about_l">
-            <p style="width: 700px;">Компания "СтройЛаб" работает на рынке строительных услуг более 15 лет. За это время
+            <p style="width: 700px;">Компания "КвартирМастер" работает на рынке строительных услуг более 15 лет. За это
+                время
                 мы реализовали более 200 успешных проектов различной сложности. <br> <br>
 
                 Наша миссия -создавать <span>качественное и доступное</span> жилье, отвечающее всем современным
@@ -129,82 +102,6 @@
     </div>
     <!-- about end -->
 
-    <section class="reviews">
-        <div class="container">
-            <div class="title container mt">
-                <div class="line"></div>
-                <h1>ОТЗЫВЫ</h1>
-                <div class="line"></div>
-            </div>
-
-            <div class="reviews-slider">
-                <button class="slider-nav slider-prev border"><img src="assets/img/arr_1.png" alt=""></button>
-                <button class="slider-nav slider-next border"><img src="assets/img/arr_2.png" alt=""></button>
-
-                <div class="slider-container">
-                    <div class="slider-track">
-
-                        <div class="review-card">
-                            <div class="review-content">
-                                <p class="review-text">Заказывали строительство коттеджа в "СтройЛаб". Работали
-                                    оперативно, соблюдали все сроки. Особенно порадовало качество материалов и
-                                    внимательное отношение к деталям. Дом получился именно таким, как мы и хотели!</p>
-                                <div class="review-author">
-                                    <div class="author-avatar">
-                                        <img src="assets/img/rev1.jpg" alt="">
-                                    </div>
-                                    <div class="author-info">
-                                        <h4>Александр Петров</h4>
-                                        <p>Коттеджный посёлок "Зелёные холмы"</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="review-card">
-                            <div class="review-content">
-                                <p class="review-text">Ремонт квартиры сделали в кратчайшие сроки, хотя мы просили
-                                    сделать к определённой дате. Дизайн-проект предложили очень интересный, учли все
-                                    наши пожелания. Качество работ на высоте - прошло уже 2 года, а всё как новое.</p>
-                                <div class="review-author">
-                                    <div class="author-avatar">
-                                        <img src="assets/img/rev2.png" alt="">
-                                    </div>
-                                    <div class="author-info">
-                                        <h4>Елена Смирнова</h4>
-                                        <p>Ремонт 3-комнатной квартиры</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="review-card">
-                            <div class="review-content">
-                                <p class="review-text">Строили с "СтройЛаб" офисное здание. Компания проявила себя как
-                                    надёжный подрядчик - все работы по смете, без скрытых платежей. Сдавали объект с
-                                    опережением графика. Теперь планируем с ними же строить складской комплекс.</p>
-                                <div class="review-author">
-                                    <div class="author-avatar">
-                                        <img src="assets/img/rev3.png" alt="">
-                                    </div>
-                                    <div class="author-info">
-                                        <h4>Дмитрий Иванов</h4>
-                                        <p>Офисный центр на ул. Строителей</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -267,15 +164,36 @@
 
 
     <!-- ask start -->
-    <div class="title container mt">
-        <div class="line"></div>
+    <div class="title_block container mt">
         <h1>НАШИ УСЛУГИ</h1>
-        <div class="line"></div>
+        <h1>02</h1>
     </div>
 
     <div class="asks">
-        <div class="ask">
-            <h2>Строительство домов под ключ</h2>
+        <div class="ask container">
+            <h2>Базовый ремонт под ключ</h2>
+
+            <div class="ask-content ">
+                <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
+                    <br><br>
+                    ▶ Индивидуальные и типовые проекты
+                    <br>
+                    ▶Любые технологии: кирпич, газобетон, каркасные дома
+                    <br>
+                    ▶ Четкое соблюдение сроков и бюджета
+                    <br>
+                    ▶Гарантия на все виды работ
+                </p>
+            </div>
+
+            <div class="plus">
+                <div class="plus_line_height"></div>
+                <div class="plus_line_width"></div>
+            </div>
+        </div>
+
+        <div class="ask container">
+            <h2>Премиум-ремонт с дизайн-проектом</h2>
 
             <div class="ask-content">
                 <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
@@ -296,8 +214,8 @@
             </div>
         </div>
 
-        <div class="ask ">
-            <h2>Капитальный ремонт квартир и офисов</h2>
+        <div class="ask container">
+            <h2>Экспресс-ремонт к новоселью</h2>
 
             <div class="ask-content">
                 <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
@@ -318,30 +236,8 @@
             </div>
         </div>
 
-        <div class="ask">
-            <h2>Коммерческое строительство</h2>
-
-            <div class="ask-content">
-                <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
-                    <br><br>
-                    ▶ Индивидуальные и типовые проекты
-                    <br>
-                    ▶Любые технологии: кирпич, газобетон, каркасные дома
-                    <br>
-                    ▶ Четкое соблюдение сроков и бюджета
-                    <br>
-                    ▶Гарантия на все виды работ
-                </p>
-            </div>
-
-            <div class="plus">
-                <div class="plus_line_height"></div>
-                <div class="plus_line_width"></div>
-            </div>
-        </div>
-
-        <div class="ask">
-            <h2>Благоустройство территории</h2>
+        <div class="ask container">
+            <h2>Ремонт с перепланировкой</h2>
 
             <div class="ask-content">
                 <p class="par_1">Полный цикл работ от проектирования до сдачи готового дома.
@@ -372,103 +268,148 @@
     </script>
     <!-- ask end -->
 
-
     <!-- proect start -->
-    <div class="title container mt" >
-        <div class="line"></div>
+    <div class="title_block mt container">
         <h1>НАШИ ПРОЕКТЫ</h1>
-        <div class="line"></div>
-    </div>
-
-    <div class="filters container">
-        <a href="/" class="fil" autofocus>Все</a>
-        <a href="/" class="fil">Жилые комплексы</a>
-        <a href="/" class="fil">Коммерческая недвижимость </a>
-        <a href="/" class="fil">Ремонт </a>
-        <a href="/" class="fil">Благоустройство </a>
+        <h1>03</h1>
     </div>
 
 
-    <div class="proects container">
-        <div class="proect">
-            <img src="assets/img/proect_1.png" alt="">
-            <h3> ЖК Небеса</h3>
-            <a href="/" class="btn border">Подробнее</a>
+    <div class="slides container">
+        <div class="slide container block">
+            <div class="slide_content">
+                <img src="assets/img/proect_1.png" alt="">
+                <div class="slide_bottom">
+                    <h1>soft style</h1>
+                    <div class="slide_list">
+                        <div class="list_section">Свойство 1</div>
+                        <div class="list_section">Свойство 2</div>
+                        <div class="list_section">Свойство 3</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="proect">
-            <img src="assets/img/proect_2.png" alt="">
-            <h3>ЖК Зеленый берег</h3>
-            <a href="/" class="btn border">Подробнее</a>
+        <div class="slide container">
+            <div class="slide_content">
+                <img src="assets/img/proect_2.png" alt="">
+                <div class="slide_bottom">
+                    <h1>casual style</h1>
+                    <div class="slide_list">
+                        <div class="list_section">Свойство 1</div>
+                        <div class="list_section">Свойство 2</div>
+                        <div class="list_section">Свойство 3</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="proect">
-            <img src="assets/img/proect_3.png" alt="">
-            <h3>ЖК Американская мечта</h3>
-            <a href="/" class="btn border">Подробнее</a>
+
+
+        <div class="slide container">
+            <div class="slide_content">
+                <img src="assets/img/proect_3.png" alt="">
+                <div class="slide_bottom">
+                    <h1>sawanna style</h1>
+                    <div class="slide_list">
+                        <div class="list_section">Свойство 1</div>
+                        <div class="list_section">Свойство 2</div>
+                        <div class="list_section">Свойство 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows_slider">
+            <div class="arrow" onclick="prevSlide()"><img src="assets/img/arr_1.png" alt=""></div>
+            <div class="arrow" onclick="nextSlide()"><img src="assets/img/arr_2.png" alt=""></div>
         </div>
     </div>
+
+
+
+    <script>
+        const slides = document.querySelectorAll('.slide')
+        let index = 0;
+
+        function showSlide() {
+            slides[index].classList.add('block')
+        }
+
+        function hideSlide() {
+            slides[index].classList.remove('block')
+        }
+
+        function nextSlide() {
+            hideSlide();
+            index++;
+            if (index > slides.length - 1) {
+                index = 0;
+            } showSlide()
+        }
+        function prevSlide() {
+            hideSlide();
+            index--;
+            if (index < 0) {
+                index = slides.length - 1;
+            } showSlide()
+        }
+
+
+    </script>
     <!-- proect end -->
 
+    <!-- reviews start -->
+    <div class="title_block mt container">
+        <h1>ВАШИ ОТЗЫВЫ</h1>
+        <h1>04</h1>
+    </div>
+    <div class="tabs container mt">
+        <div class="btns">
+            <div class="btn_rev active">Отзыв 1</div>
+            <div class="btn_rev">Отзыв 2</div>
+            <div class="btn_rev">Отзыв 3</div>
+        </div>
 
-    <!-- news start -->
-    <div class="title container mt" >
-        <div class="line"></div>
-        <h1>НОВОСТИ</h1>
-        <div class="line"></div>
+        <div class="texts">
+            <div class="text active">Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Deserunt aperiam dolorum
+                pariatur praesentium explicabo minima, tempore suscipit, mollitia veritatis dolor earum quae aspernatur
+                aliquid cupiditate ducimus. Quisquam necessitatibus hic dolor!</div>
+            <div class="text">Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur voluptas
+                asperiores debitis nostrum! Aliquid vero iure excepturi rem. Modi enim nemo laboriosam perferendis atque
+                doloribus nostrum ipsa fuga delectus.</div>
+            <div class="text">Lorem 3 ipsum dolor sit, amet consectetur adipisicing elit. Voluptate necessitatibus
+                accusantium non vitae modi eveniet, commodi corrupti quia a odio. Obcaecati, numquam illum voluptas a
+                error fugiat nobis doloremque reiciendis!</div>
+        </div>
     </div>
 
-    <div class="news container" style="margin-top: 70px;">
-        <div class="new">
-            <div class="title_new">СтройЛаб начинает строительство нового жилого комплекса "Речной квартал"</div>
+    <!-- reviews end -->
 
-            <div class="date">03.02.2024</div>
-
-            <p>Компания "СтройЛаб" приступила к реализации масштабного проекта — жилого комплекса "Речной квартал" в
-                центре Москвы. Комплекс будет включать 5 современных корпусов с подземным паркингом, детскими площадками
-                и зонами отдыха. Сдача объекта запланирована на 4 квартал 2024 года. Для будущих жителей предусмотрены
-                специальные условия ипотечного кредитования от наших партнеров.</p>
+    <!-- form bid start -->
+    <div class="form_block container mt" id="form_bron">
+        <div class="title_form_block">
+            <H1>ОСТАЛИСЬ<br> ВОПРОСЫ?</H1>
         </div>
+        <div class="right_form_block">
+            <form action="" class="bid">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Телефон">
+                <div class="bottom_form">
+                    <button>Отправить</button>
+                    <p>Наш менеджер свяжется с вами в течение 30 минут</p>
+                </div>
+            </form>
 
-        <div class="new">
-            <div class="title_new">Внедрение "зеленых" технологий в строительстве</div>
-
-            <div class="date">23.11.2024</div>
-
-            <p>СтройЛаб объявляет о переходе на экологичные строительные материалы и энергоэффективные технологии. В
-                новых проектах будут использоваться солнечные панели, системы рекуперации тепла и переработанные
-                материалы. Первым "зеленым" объектом станет бизнес-центр "Экохаб", строительство которого начнется уже в
-                этом месяце.</p>
-        </div>
-
-        <div class="new">
-            <div class="title_new">Специальная акция "Ремонт под ключ со скидкой 20%"</div>
-
-            <div class="date">09.06.2024</div>
-
-            <p>Только до конца лета! "СтройЛаб" предлагает уникальное предложение — комплексный ремонт квартир и офисов
-                со скидкой 20%. В акцию входят: дизайн-проект, черновая и чистовая отделка, монтаж инженерных систем.
-                Оставьте заявку до 31 августа и получите бесплатный выезд замерщика.</p>
-        </div>
-
-        <div class="new">
-            <div class="title_new">"СтройЛаб" получил награду "Лучший застройщик года-2023"</div>
-
-            <div class="date">07.12.2024</div>
-
-            <p>По итогам национальной премии в области строительства наша компания удостоена звания "Лучший застройщик
-                года" в категории "Коммерческая недвижимость". Награда вручена за инновационный подход к проектированию
-                и высокое качество реализации бизнес-центра "Плаза Тауэр". Это уже третья профессиональная награда
-                компании за последние 2 года.</p>
         </div>
     </div>
-    <!-- news end -->
+    <!-- form bid end -->
 
     <!-- contacts start -->
 
-    <div class="title container mt" >
-        <div class="line"></div>
+    <div class="title_block container mt">
         <h1>КОНТАКТЫ</h1>
-        <div class="line"></div>
+        <h1>05</h1>
     </div>
+    <div class="about container mt par_1">
     <div class="contacts container">
         <div style="position:relative;overflow:hidden;"><a
                 href="https://yandex.ru/maps/org/ak_tash/1707546221/?utm_medium=mapframe&utm_source=maps"
@@ -484,10 +425,10 @@
 
         <div class="contacts_r">
             <a href="tel:+78003455667" class="hov">+7 (800) 345 56 67</a>
-            <a href="mailto:stroilab@mail.ru">stroilab@mail.ru</a>
+            <a href="mailto:kvmaster@mail.ru">kvmaster@mail.ru</a>
             <div class="icons">
                 <a href="/"><img src="assets/img/tg.svg" alt=""></a>
-            <a href="/"><img src="assets/img/vk.svg" alt=""></a>
+                <a href="/"><img src="assets/img/ws.svg" alt=""></a>
             </div>
         </div>
     </div>
@@ -499,15 +440,15 @@
         <div class="col par_1">
             <div class="images_footer">
                 <img src="assets/img/tg.svg" alt="">
-                <img src="assets/img/vk.svg" alt="">
+                <img src="assets/img/ws.svg" alt="">
             </div>
-            <a href="mailto:stroilab@mail.ru">stroilab@mail.ru</a>
+            <a href="mailto:kvmaster@mail.ru">kvmaster@mail.ru</a>
         </div>
 
 
         <div class="col par_1">
             <a href="tel:+78003455667" class="hov">+7 (800) 345 56 67</a>
-            <a href="mailto:stroilab@mail.ru">stroilab@mail.ru</a>
+            <a href="mailto:kvmaster@mail.ru">kvmaster@mail.ru</a>
         </div>
 
 
